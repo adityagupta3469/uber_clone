@@ -4,7 +4,6 @@ import 'dart:async';
 
 class MyHomePage extends StatefulWidget {
 	MyHomePage({Key key, this.title}) : super(key: key);
-	
 	final String title;
 	
 	@override
@@ -29,6 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
 	Widget build(BuildContext context) {
 		return Scaffold(
 			// 1
+      appBar: AppBar(title: Text(widget.title),),
 			body: GoogleMap(
 				// 2
 				initialCameraPosition: _myLocation,

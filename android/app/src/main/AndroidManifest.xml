@@ -6,14 +6,13 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="uber_clone"
         android:icon="@mipmap/ic_launcher">
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAKKlVyVcKrzMgMk7sOGk49w5klra-jx00"/>
 
         <activity
             android:name=".MainActivity"
@@ -32,5 +31,9 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBF3prQRqWa5ueWW_U09cno_uY7vWyf_Kg"/>
+
     </application>
 </manifest>
