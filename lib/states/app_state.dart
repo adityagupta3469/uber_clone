@@ -107,8 +107,7 @@ class AppState with ChangeNotifier {
   
   // ! SEND REQUEST
   void sendRequest(String intendedLocation) async {
-    List<Placemark> placemark =
-    await Geolocator().placemarkFromAddress(intendedLocation);
+    List<Placemark> placemark = await Geolocator().placemarkFromAddress(intendedLocation);
     double latitude = placemark[0].position.latitude;
     double longitude = placemark[0].position.longitude;
     LatLng destination = LatLng(latitude, longitude);
@@ -135,7 +134,7 @@ class AppState with ChangeNotifier {
   void _loadingInitialPosition()async{
     await Future.delayed(Duration(seconds: 5)).then((v) {
       if(_initialPosition == null){
-        locationServiceActive = false;
+        locationServiceActive = true;
         notifyListeners();
       }
     });

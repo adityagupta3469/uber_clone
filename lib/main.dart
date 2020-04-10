@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:uber_clone/states/app_state.dart';
 import 'screens/home.dart';
 
-void main() => runApp(MyApp());
+
+void main() {
+  return runApp(MultiProvider(providers: [
+    ChangeNotifierProvider.value(value: AppState(),)
+  ],
+    child: MyApp(),));
+}
 
 class MyApp extends StatelessWidget {
   @override
