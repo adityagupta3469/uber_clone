@@ -30,6 +30,9 @@ class AppState with ChangeNotifier {
     print("GET USER METHOD RUNNING =========");
     Position position = await Geolocator()
         .getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+    print("position");
+    print(position.toString());
+    print(position.longitude);
     List<Placemark> placemark = await Geolocator()
         .placemarkFromCoordinates(position.latitude, position.longitude);
     _initialPosition = LatLng(position.latitude, position.longitude);
