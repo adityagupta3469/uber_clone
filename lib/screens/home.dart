@@ -4,8 +4,8 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:uber_clone/states/app_state.dart';
 
-class MyHomePage extends StatefulWidget {
-	MyHomePage({Key key, this.title}) : super(key: key);
+class MyHomePageMap extends StatefulWidget {
+	MyHomePageMap({Key key, this.title}) : super(key: key);
 	
 	final String title;
 	
@@ -13,7 +13,7 @@ class MyHomePage extends StatefulWidget {
 	_MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePageMap> {
 	@override
 	Widget build(BuildContext context) {
 		return Scaffold(body: Map());

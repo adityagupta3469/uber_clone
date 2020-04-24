@@ -31,6 +31,7 @@ dependencies:
   google_maps_webservice: ^0.0.16
   geolocator: ^5.3.0
   http: ^0.12.0+4
+  google_sign_in: ^4.4.1
   provider:
 #  map_view:
   flutter_spinkit: ^4.1.2
@@ -54,7 +55,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
 
