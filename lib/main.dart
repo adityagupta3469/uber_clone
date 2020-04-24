@@ -5,6 +5,7 @@ import 'screens/home.dart';
 
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   return runApp(MultiProvider(providers: [
     ChangeNotifierProvider.value(value: AppState(),)
   ],
